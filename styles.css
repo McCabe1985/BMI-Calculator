@@ -1,0 +1,101 @@
+/*css is crude, I can see a few places where the code can be made less verbose and easier to read
+will clean this up for portfolio */
+
+html {
+    background-color: #333232;
+    height: 100%;
+}
+
+
+#container {
+    height: 300px;
+    width: 550px;
+    background-color: #f5e4c3;
+    margin: 0 auto;
+    border: 5px solid #88b169;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+/*Input fields*/
+#weightInput {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-self: center;
+}
+
+#wLabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#heightInput {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+#hLabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+/*Output Fields */
+
+#bmiOutput {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+#bmiLabel {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#btn {
+    height: 25px;
+    width: 75px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+/* definition of BMI Values */
+
+#table {
+    height: 100px;
+    width: 550px;
+    background-color: #f5e4c3;
+    margin: 0 auto;
+    border: 5px solid #88b169;
+}
+
+table, th, td {
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
